@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <h3>INFORMATIONS</h3>
+    <table class="table table-bordered table-striped" *ngIf="userData">
+      <thead class="table-dark">
+        <tr>
+          <th>Prénom</th>
+          <th>Nom </th>
+          <th>téléphone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ userData.firstName }}</td>
+          <td>{{ userData.lastName }}</td>
+          <td>{{ userData.phoneNumber }}</td>
+          <td>{{ userData.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
